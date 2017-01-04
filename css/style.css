@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../img/bg.jpg");
+    background-repeat: repeat-x;  
+}
+
+.wrapper{
+    margin: 0 163px;
+    width: 1000px;
+    height: 1024px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+ 
+/********HEADER*********/
+
+.logo{position: relative;}
+
+.header-logo{
+    position: absolute;
+    top: 48px;
+    left: 28px;
+}
+
+.header-logo-txt{
+	font: 12px Tahoma;
+    color: #128aa7;
+    position: absolute;
+    top: 145px;
+    left: 99px;
+}
+
+.contacts{
+    list-style: none;
+    padding: 51px 0 0 841px;
+    color: #128aa7;
+}
+
+.contacts-header{
+    font: 12px Tahoma;
+    font-weight: bold;
+    margin-top: -5px;
+    letter-spacing: -0.7px;
+}
+
+.contacts-tel{
+    font-size: 12px;
+    padding-top: 6px;
+}
+
+.contacts-email{
+    font-size: 12px;
+    padding-top: 1px;
+}
+
+.contacts-header > a,
+.contacts-tel > a,
+.contacts-email > a{
+    text-decoration: none;
+    color: #128aa7;
+}
+
+.header-flags{padding: 67px 0 0 631px;}
+
+.header-flags-item{padding: 0 1px 0 9px;}
+
+.countrys{
+    margin: -2px 0 0 627px;
+    font: 10px Tahoma;
+}
+
+.country-first{
+    padding: 0 7px 0 19px;
+    color: #128aa7;
+}
+
+.country-second{
+    padding: 0 9px 0 17px;
+    color: #128aa7;
+}
+
+.country-third{
+    padding-left: 4px;
+    color: #128aa7;
+}
+
+.country-first:hover,
+.country-second:hover,
+.country-third:hover{
+    text-decoration: none;
+    color: red;
+}
+
+.header-image{padding-top: 8px;}
+
+/***********MENU***********/
+ul {
+   height: 31px;
+    display: block;
+    list-style: none;
+    font: 14px Tahoma;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li{
+    float: left;
+    position: relative;
+}
+
+ul.menu > li > .first-group {
+    display: block;
+    text-align: center;
+    margin: -3px 0 0 0;
+    padding: 4px 1px 10px 66px;
+    color: white;
+    background-color: #303030;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+ul.menu > li > .second-group{
+    display: block;
+    text-align: center;
+    margin: -3px 0 0 0;
+    padding: 4px 10px 10px 45px;
+    color: white;
+    background-color: #303030;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+ul.menu > li > .third-group {
+    display: block;
+    text-align: center;
+    margin: -3px 0 0 0;
+    padding: 4px 40px 10px 34px;
+    color: white;
+    background-color: #303030;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+ul.menu > li > .forth-group {
+    display: block;
+    text-align: center;
+    margin: -3px 0 0 0;
+    padding: 4px 61px 10px 23px;
+    color: white;
+    background-color: #303030;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.triangle{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 2.5px 0 2.5px;
+    border-color: #fff transparent transparent transparent;
+    margin: 0 11px 1px 7px;
+}
+
+ul.menu > li > a:hover{
+    background-color: black;
+}
+ul.submenu{
+    display: none;
+    position: absolute;
+    width: 153px;
+    top: 27px;
+    left: 56px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+ul.submenu__second{
+    display: none;
+    position: absolute;
+    width: 153px;
+    top: 27px;
+    left: 56px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a{
+    display: block;
+    padding: 2px 0 5px 10px;
+    color: white;
+    background-color: #303030;
+    text-decoration: none;
+    
+}
+ul.submenu > li > a:hover{
+    text-decoration: underline;
+}
+
+ul.menu > li:hover > ul.submenu{
+    display: block;
+}
+
+/********COLUMNS********/
+.box-column{
+    width: 1000px;
+    background: url('../img/bg_col.png') repeat-y;
+    float: left;
+}
+
+.left-column{
+    width: 210px;
+    float: left;
+}
+
+.column-header-left{
+    padding: 5px 51px;
+    font: 16px Tahoma;
+    font-weight: bolder;
+}
+
+.column-txt-left{
+    padding: 0 16px;
+    line-height: 24px;
+}
+
+.central-column{
+    width: 580px;
+    float: left;
+}
+
+.right-column{
+    width: 210px;
+    float: right; 
+}
+
+.column-header-right{
+    padding: 4px 67px;
+    font: 16px Tahoma;
+    font-weight: bolder;
+}
+
+.column-txt-right{
+    margin-top: 2px;
+    padding: 0 16px;
+    line-height: 24px;
+}
+
+/********COPYRIGHT********/
+.copyright{
+    margin: 0 402px;
+    font: 12px Tahoma;
+    color: #fff;
+    line-height: 37px;
+}
